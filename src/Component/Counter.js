@@ -20,16 +20,20 @@ class Counter extends Component {
           : this.state.counter - 1,
     });
   }
+
   render() {
     return (
-      <div>
+      <div className="contanier">
+        <h3> Counter</h3>
         <h3> Count value is:{this.state.counter}</h3>
-        <button onClick={() => this.increment()} className="increaseBtn">
-          increment
-        </button>
-        <button onClick={() => this.decrement()} className="decreaseBtn">
-          decrement
-        </button>
+        <div>
+          <button onClick={() => this.increment()} className="increaseBtn">
+            increment
+          </button>
+          <button onClick={() => this.decrement()} className="decreaseBtn">
+            decrement
+          </button>
+        </div>
       </div>
     );
   }
